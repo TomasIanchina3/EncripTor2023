@@ -7,4 +7,3 @@ with open(nombre) as objt_a:
 except FileNotFoundError:
 mensaje="ERROR Archivo no encotrado"
 print(mensaje)
-
