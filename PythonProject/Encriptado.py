@@ -21,7 +21,7 @@ encriptado = []
 for caracter in texto:
     encriptado.append(str(ord(caracter) + llave))
 
-#Para desencriptarlo necesitamos la funcion char("Valor entero")// Chicos si ven esto borrenlo
+#Para desencriptarlo necesitamos la funcion char("Valor entero")
 texto2= ""
 for caracter in encriptado:
     texto2 +=chr(int(caracter))
