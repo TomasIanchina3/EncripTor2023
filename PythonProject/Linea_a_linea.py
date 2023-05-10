@@ -5,5 +5,4 @@ with open(nombre_Archivo) as objecto_A:
  for line in lineas:
      print(line.rstrip())
 
-
 #Este metodo funciona para leer el archivo linea por linea
