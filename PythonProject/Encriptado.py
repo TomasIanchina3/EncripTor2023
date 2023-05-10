@@ -23,14 +23,12 @@ encriptado = ""
 #Chicos realice modificaciones este codigo
 #Al ser la version beta este solo admitira el codigo ASCII pero no el codigo ASCII extendido ya que deberiamos aplicar UNICODE derivando en otro metodo distinto
 for caracter in texto:
-<<<<<<< HEAD
     encriptado.append(str(ord(caracter) + llave))
 
 #Para desencriptarlo necesitamos la funcion char("Valor entero")
 texto2= ""
 for caracter in encriptado:
     texto2 +=chr(int(caracter))
-=======
     codigoa = ord(caracter)
     if codigoa >= 32 and codigoa <= 126:
       ce = codigoa + llave
@@ -38,7 +36,6 @@ for caracter in encriptado:
       encriptado += caracterencriptado
     else:
         encriptado += caracter
->>>>>>> e50105b34dce3d02d12126ad74fd9b5cc814723e
 
 #Ahora procederemos a modificar nuestro archivo de texto base
 
