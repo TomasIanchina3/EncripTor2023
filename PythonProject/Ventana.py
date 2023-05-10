@@ -1,5 +1,6 @@
 import tkinter as tk
 import Encriptado
+import Desencriptado
 
 #Creacion ventana
 ventana = tk.Tk()
@@ -20,7 +21,7 @@ ventana.config(menu=menu_prin)
 #Configuracion botones
 boton_encriptar=tk.Button(text="ENCRIPTAR", padx=15, pady=15, command= lambda: Encriptado.encriptar())
 boton_encriptar.place(x=150, y=100)
-boton_desencriptar=tk.Button(text="DESENCRIPTAR", padx=15, pady=15)
+boton_desencriptar=tk.Button(text="DESENCRIPTAR", padx=15, pady=15, command= lambda: Desencriptado.desencriptar())
 boton_desencriptar.place(x=150, y=200)
 
 ventana.mainloop()
