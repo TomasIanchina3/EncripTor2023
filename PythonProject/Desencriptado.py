@@ -1,11 +1,7 @@
 #Programa que contiene la logica de desencriptacion
-import os
-import random
-import  tkinter as tk
-from tkinter  import filedialog
+from tkinter import filedialog
 
 def desencriptar():
-    ventana = tk.Tk()
 
     ruta_archivo = filedialog.askopenfilename()
 

@@ -1,15 +1,10 @@
 #Programa que contiene la logica de encriptacion
-import os
 import random
-import  tkinter as tk
-from tkinter  import filedialog
-from more_itertools import run_length
+from tkinter import filedialog
 
 def encriptar():
     #Primero vamos a generar el numero random entre 1 y 4
     llave = random.randint(1,4)
-
-    ventana = tk.Tk()
 
     ruta_archivo = filedialog.askopenfilename()
 

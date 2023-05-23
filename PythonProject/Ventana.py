@@ -24,4 +24,4 @@ boton_encriptar.place(x=150, y=100)
 boton_desencriptar=tk.Button(text="DESENCRIPTAR", padx=15, pady=15, command= lambda: Desencriptado.desencriptar())
 boton_desencriptar.place(x=150, y=200)
 
-# ventana.mainloop()
+ventana.mainloop()
