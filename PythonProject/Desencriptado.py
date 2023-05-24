@@ -19,7 +19,7 @@ def desencriptar():
     #Aqui vamos a hacer el proceso a inversa del cual aplicamos en Encriptado
     for caracter in texto:
         codigo_ascii = ord(caracter)
-        if codigo_ascii >=32 and codigo_ascii <= 126:
+        if codigo_ascii >=32 and codigo_ascii <= 122:
             coo = codigo_ascii - int(llave)
             cardes = chr(coo)
             textoDes += cardes

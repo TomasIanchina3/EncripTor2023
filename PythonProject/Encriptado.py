@@ -18,7 +18,7 @@ def encriptar():
     #Al ser la version beta este solo admitira el codigo ASCII pero no el codigo ASCII extendido ya que deberiamos aplicar UNICODE derivando en otro metodo distinto
     for caracter in texto:
         codigoa = ord(caracter)
-        if codigoa >= 32 and codigoa <= 126:
+        if codigoa >= 32 and codigoa <= 122:
           ce = codigoa + llave
           caracterencriptado = chr(ce)
           encriptado += caracterencriptado
