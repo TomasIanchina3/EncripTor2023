@@ -1,9 +1,12 @@
 from os import open
+from tkinter import filedialog
 
-nombre = 'archivoNoExiste.txt'
-try:
-with open(nombre) as objt_a:
-    contenido = objt_a.read()
-except FileNotFoundError:
-mensaje="ERROR Archivo no encotrado"
-print(mensaje)
+
+def seleccionar_archivo():
+    ruta_archivo = filedialog.askopenfilename()
+    try:
+        with open(path=ruta_archivo, mode="rt") as file:
+            print(file.read())
+    except FileNotFoundError:
+        print("ERROR! Archivo no encotrado.")
+        seleccionar_archivo()
